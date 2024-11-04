@@ -50,6 +50,7 @@ const Login = () => {
       }
     } catch (error) {
       console.error("Error signing up:", error);
+      console.log({error})
       setError("Invalid login credentials");
     } finally {
       setLoading(false);
